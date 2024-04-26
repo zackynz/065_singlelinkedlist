@@ -87,5 +87,15 @@ bool listEmpety() {
         return true;
     else
         return false;
-        
+
+}
+
+void traverse() {
+    if (listEmpety()) {
+        cout << "List Kosong" << endl;
+        system("pause");
+        system("cls");
+        return;
+    }
+    }
 }
