@@ -58,6 +58,7 @@ bool serachNode(int nim, Node* current, Node* previous) {
         previous = current;
         current = current->next;
     }
+
     if (current == NULL)
     {
         return false;
@@ -65,6 +66,10 @@ bool serachNode(int nim, Node* current, Node* previous) {
     else if (current->noMHS == nim)
     {
         return true;
+    }
+    else
+    {
+        return false;
     }
 }
 bool deleteNode(int nim) {
