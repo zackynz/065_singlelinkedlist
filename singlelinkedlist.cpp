@@ -23,7 +23,12 @@ void addNode () {
     if (START == NULL || nim <= START->noMHS) {
         if (START != NULL && nim == START->noMHS)
         {
-            
+            cout << "NIM sudah ada" << endl;
+            return;
         }
+
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
     }
 }
