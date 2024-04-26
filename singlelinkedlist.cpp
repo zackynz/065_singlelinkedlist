@@ -19,4 +19,11 @@ void addNode () {
     cin >> nama;
     nodeBaru->noMHS = nim;
     nodeBaru->name = nama;
+
+    if (START == NULL || nim <= START->noMHS) {
+        if (START != NULL && nim == START->noMHS)
+        {
+            
+        }
+    }
 }
